@@ -1,0 +1,49 @@
+.register-container {
+  padding: 90px 0;
+}
+
+.stepper-container {
+  margin-top: 16px;
+
+  .step {
+    .title {
+      color: var(--neutral-60) !important;
+    }
+
+    .number {
+      width: 32px;
+      line-height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--neutral-60);
+      box-sizing: border-box;
+      margin: 0 auto 4px;
+      text-align: center;
+    }
+
+    &.active {
+      .number {
+        background-color: var(--primary-100);
+        border: none;
+      }
+
+      .title {
+        color: var(--neutral-0) !important;
+      }
+    }
+  }
+
+  .divide {
+    height: 2px;
+    border-radius: 10px;
+    width: 188px;
+    background-color: var(--neutral-60);
+  }
+}
+
+.next-button {
+  margin-top: 40px;
+}
+
+.error {
+  color: var(--primary-80);
+}

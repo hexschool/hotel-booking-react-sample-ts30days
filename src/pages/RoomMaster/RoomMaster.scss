@@ -1,0 +1,90 @@
+.home-carousel .overlay-bg.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .description-container {
+    padding: 0;
+
+    h1 {
+      color: var(--neutral-0);
+    }
+
+    .slogan {
+      width: 500px;
+      margin-right: 80px;
+    }
+  }
+}
+
+.room-master {
+  h6 {
+    color: var(--neutral-80);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    color: var(--primary-100);
+  }
+
+  .list {
+    margin-top: 80px;
+
+    > li {
+      display: flex;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: var(--neutral-0);
+
+      &:not(:last-child) {
+        margin-bottom: 48px;
+      }
+
+      .carousel {
+        width: 59.65%;
+        aspect-ratio: 773/457;
+      }
+
+      .description {
+        width: 40.35%;
+        padding: 40px;
+        box-sizing: border-box;
+
+        h2 {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .basic-info {
+      display: flex;
+      margin: 40px 0;
+
+      li:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      app-room-basic-info {
+        border: 1px solid var(--primary-40);
+      }
+    }
+
+    .decoration-line {
+      height: 2px;
+      background: linear-gradient(to right, #be9c7c, #ffffff);
+    }
+
+    h5 {
+      margin-top: 60px;
+      color: var(--primary-100);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

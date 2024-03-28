@@ -1,0 +1,82 @@
+@use "src/themes/typography" as t;
+
+nav {
+  padding: 24px 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+
+  &.be-transparent {
+    background-color: transparent;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 196px;
+      height: 72px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      color: var(--neutral-0);
+
+      li {
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+
+        .user-wrapper {
+          padding: 16px;
+          cursor: pointer;
+
+          svg {
+            margin-right: 8px;
+          }
+        }
+
+        a {
+          padding: 16px;
+          text-decoration: none;
+          display: block;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-menu {
+  .MuiPaper-root {
+    border-radius: 20px;
+
+    .MuiList-root {
+      padding: 12px 0;
+
+      .MuiMenuItem-root {
+        font-size: 1rem;
+        @include t.body;
+        @include t.bold;
+        padding: 16px 24px;
+        width: 260px;
+        box-sizing: border-box;
+        color: var(--neutral-80);
+
+        &:hover {
+          background-color: var(--primary-10);
+          color: var(--primary-100);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.room-basic-info {
+  width: 99px;
+  height: 99px;
+  display: block;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: var(--neutral-0);
+  box-sizing: border-box;
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .title {
+    margin-top: 8px;
+    color: var(--neutral-80);
+  }
+}

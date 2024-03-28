@@ -1,0 +1,78 @@
+nav {
+  z-index: 5;
+}
+
+.layout-container {
+  height: 100vh;
+  padding-top: 120px;
+  box-sizing: border-box;
+
+  > div {
+    flex: 1;
+
+    &:first-child {
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    &:last-child {
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow-y: auto;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 1060px;
+        height: 187px;
+        background: url("../../assets/images/deco_line.png") no-repeat;
+      }
+    }
+  }
+
+  .login-form-container {
+    width: 416px;
+    color: var(--neutral-0);
+    z-index: 1;
+
+    .title:not(label) {
+      color: var(--primary-100);
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .flex {
+      justify-content: space-between;
+      align-items: center;
+
+      input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+
+        + label {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .field {
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: block;
+      width: 100%;
+
+      .input {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

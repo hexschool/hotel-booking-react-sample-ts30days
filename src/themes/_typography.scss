@@ -1,0 +1,78 @@
+@mixin bold {
+  font-weight: 700;
+}
+
+@mixin heading {
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  @include bold;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+  @include heading;
+}
+
+h2 {
+  font-size: 2.5rem;
+  @include heading;
+}
+
+h3 {
+  font-size: 2rem;
+  @include heading;
+}
+
+h4 {
+  font-size: 1.75rem;
+  @include heading;
+}
+
+h5 {
+  font-size: 1.5rem;
+  @include heading;
+}
+
+h6 {
+  font-size: 1.25rem;
+  @include heading;
+}
+
+@mixin body {
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  font-size: 1rem;
+  @include body;
+  @include bold;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  @include body;
+  @include bold;
+}
+
+@mixin regular {
+  font-weight: 500;
+}
+
+.body {
+  font-size: 1rem;
+  @include body;
+  @include regular;
+}
+
+.body-2 {
+  font-size: 0.875rem;
+  @include body;
+  @include regular;
+}
+
+.tiny {
+  font-size: 0.75rem;
+  @include body;
+  @include regular;
+}

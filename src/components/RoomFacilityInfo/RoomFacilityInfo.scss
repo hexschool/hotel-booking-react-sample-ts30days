@@ -1,0 +1,19 @@
+.room-facility-info {
+  background-color: var(--neutral-0);
+  border-radius: 8px;
+  padding: 24px 24px 16px;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: 40px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+      fill: var(--primary-100);
+    }
+  }
+}

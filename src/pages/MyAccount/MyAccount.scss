@@ -1,0 +1,77 @@
+.banner {
+  background-image: url("../../assets/images/my-account-banner.png");
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    color: var(--neutral-0);
+
+    svg {
+      margin-right: 24px;
+    }
+  }
+}
+
+.my-account-container {
+  padding: 80px 312px 120px;
+
+  .tabs {
+    display: flex;
+    color: var(--neutral-0);
+    margin-bottom: 80px;
+
+    li {
+      padding: 16px 24px;
+    }
+  }
+
+  .my-account-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .card {
+      background-color: var(--neutral-0);
+      border-radius: 20px;
+      padding: 40px;
+      box-sizing: border-box;
+
+      h5 {
+        margin-bottom: 40px;
+      }
+
+      .field {
+        .body {
+          color: var(--neutral-80);
+          margin-bottom: 8px;
+        }
+
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .pwd {
+      width: 40.63%;
+    }
+
+    .personal {
+      width: 56.28%;
+    }
+  }
+}
+
+.divider-line {
+  height: 188px;
+  background-image: url("../../assets/images/deco_line_wide.png");
+  background-size: cover;
+}
